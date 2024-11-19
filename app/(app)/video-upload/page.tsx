@@ -57,7 +57,7 @@ function VideoUpload() {
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="input input-bordered w-full"
+                className="input input-bordered w-full text-white"
                 required
               />
             </div>
@@ -68,7 +68,7 @@ function VideoUpload() {
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="textarea textarea-bordered w-full"
+                className="textarea textarea-bordered w-full text-white"
               />
             </div>
             <div>
@@ -79,7 +79,7 @@ function VideoUpload() {
                 type="file"
                 accept="video/*"
                 onChange={(e) => setFile(e.target.files?.[0] || null)}
-                className="file-input file-input-bordered w-full"
+                className="file-input file-input-bordered w-full text-white"
                 required
               />
             </div>
